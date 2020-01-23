@@ -1,1 +1,0 @@
-[Python界最好的科学计算IDE居然是它？](env_setup/env_setup.md)
