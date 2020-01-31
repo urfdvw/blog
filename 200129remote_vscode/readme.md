@@ -21,17 +21,18 @@ That means no text editing is possible
 
 ## Citrix Virtual Sinc Site
 
-Special keys except win button are all working. But all the punctuations are replaced by some "SMART" punctuations.
-Such as the none sense directed quotes, and double dash is a long dash.
-This is basically not acceptable in coding.
+Special keys except win button are all working.
+But all the punctuations are replaced by some "SMART" punctuations.
+However, this can be fixed in iPad input setting.
+So this seems to work well.
 
 ## Citrix Virtual Sinc Site and Chrome Remote
 
 I even tried to use Chrome Remote inside the Sinc Site,
-It does not work as expected.
-You see, not punctuations are working in Chrome Remote in Citrix.
+No punctuations is working in Chrome Remote in Citrix.
 
 ## Conclusion
 
 Finally I have to accept that I still cannot do any serious coding work on my iPad.
 It is a shame that the disability is due to the lack of apps.
+ 
