@@ -2,4 +2,5 @@
 # [Remote desktop on iPad and VScode on Win10](./200129remote_vscode/readme.md)
 # [如何拯救苹果的鼠标](./200130elegant_junk/readme.md)
 # [隔着两层SSH怎么用Python](./200131double_ssh/readme.md)
-# [Jupyter Notebook or Script](./20200205notebook_vs_script/readme.md)
+# [Jupyter Notebook or Script](./200205notebook_vs_script/readme.md)
+# [Ubuntu 在 Z170 Pro4 主板上的 Kworker BUG](./200206/readme.md)
