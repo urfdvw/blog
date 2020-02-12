@@ -1,10 +1,89 @@
-# Remote desktop on iPad and VScode on Win10
+# 在iPad上使用Python
 
-I was very happy with the keyboard I got, because it has a trackpad. 
-With the new iPad OS update, I can have access to most of the web apps, such as overleaf and github.
+前些日子，淘宝上的带触摸板的iPad9.7的键盘终于在美帝靠岸了。
+在eBay和amazon上蹲了许久的我当然是第一时间拿了一块。
+尝试了许久，发现，Safari的进步确实非常的大。
+最初我入坑的时候iOS6时代的浏览器堪称灾难，
+如今已经甩掉安卓直追ChromeOS了。
+这样一来，像Leetcode和Github这样的网页app就可以直接使用了。
 
-The most thing I want is to use it with my remote desktop app and I can bring the computing power with me within the iPad.
-However, when I test out the remotes, none of them can be used correctly.
+然而另外一样我想尝试的事情，
+就是能不能做一些正经的coding，比如python。
+当然我也是清醒的，
+iPad9.7两年多前的移动处理器应该是跑不起我写的那些个低效运算代码的。
+所以除了在iPad上本地开发以外，
+我还想试试看能不能链接远程开发。
+
+## 本地开发
+这部分我基本上是抱着玩的心态在尝试的。
+大名鼎鼎的Juno我只是看了一眼就被价格劝退了。
+之后发现两个良心到令人发指的软件：
+a-Shell和Carnets。
+后来发现居然出自一家之手，
+就更令我震惊了。
+
+a-Shell是一个terminal软件，
+然而里面自带了Python3。
+就是说如果你VIM用的还开心的话，
+这就是一个完整的python开发环境了。
+当然我用的很不开心就是了。
+然而软件的dir是可以在iPad的Files里直接打开的，
+于是我顺手找了一下iPad上的代码编辑器，
+有一个叫做Kodex的用起来还不错。
+于是可以利用分屏的功能，
+一边terminal一边编辑器。
+没有图像是肯定的了，
+但也不是所有的活都必须要图像的嘛。
+但玩了一会发现两个最大的问题：
+没有scipy，没有git。
+👋
+
+Carnets是一个Jupyter的软件。
+图像的问题是解决了，
+和a-Shell一样，也是可以打开iPad里面的文件。
+其实git也不是完全没有替代品，
+比如绑定dropbox然后编辑dropbox里面的文件。
+然而最致命的还是没有scipy。
+不过看了一眼隔壁15刀的Juno也没有scipy，
+我算是心安了。
+
+综上，这两个软件算是最良心的了，
+可惜实用性欠了点。
+其实iPad上运行的scipy也不是没有，
+软件叫做pyto，
+不过看了一眼价格我还是算了吧。
+
+## 远程开发
+直接说结论吧，Teamviewer，Chrome Remote，Citrix都基本上没法用。
+主要是因为键盘和触摸都是通过一些非常不直接的方式传到远端的，
+最后的结果就是没有一个软件能正常地操作远端的VScode。
+
+因为之前了解到了port forwarding这个存在，
+最终我发现了用iPad上的Safari打开远程Jupyter的方法。
+
+软件用的是**免费**SSH软件termius。
+这个软件其实是付费的，
+免费功能只有两个，
+SSH和port forwarding。
+🤔，妥。
+首先在Termius里建立一个SSH host，
+然后在SSH的基础之上建立一个port forwarding。
+把两样都打开后，
+输入命令打开一个jupyter，
+在触摸屏上点击生成的link，
+就可以在Safari里打开。
+
+不错进去了，
+而且能用！~~🎉~~。
+才怪，
+服务器的链接瞬间就断了。
+
+最后需要在Termius修改一个设置，
+就是把location tracking打开。
+因为iOS有个智障的设定，
+就是一般app在后台20秒就会被挂掉，
+然而如果软件调用位置数据就会留在后台
+
 
 ## Teamviewer
 
