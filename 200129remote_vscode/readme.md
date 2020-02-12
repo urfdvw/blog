@@ -72,46 +72,21 @@ SSH和port forwarding。
 输入命令打开一个jupyter，
 在触摸屏上点击生成的link，
 就可以在Safari里打开。
-
-不错进去了，
-而且能用！~~🎉~~。
+登陆进去了，而且能用~~🎉~~
 才怪，
 服务器的链接瞬间就断了。
 
-最后需要在Termius修改一个设置，
-就是把location tracking打开。
-因为iOS有个智障的设定，
+搜了一下发现，
+iOS有个智障的设定，
 就是一般app在后台20秒就会被挂掉，
-然而如果软件调用位置数据就会留在后台
+然而如果软件调用位置数据就会留在后台。
+不过Termius的开发者鸡贼地做了一个完全没有任何用途的功能，
+就是"记录每次登陆的位置"。
+如果在Termius的设置里打开这个选项，
+Jupyter就可以一直连着服务器。
 
+因为Safari是iPad上自己的软件，
+所以键盘和触摸都工作地十分流畅。
 
-## Teamviewer
-
-Teamviewer was the best among the all, but has a crucial bug.
-It supports a lot keyboard short cuts, even including the ones requires win key.
-But when I try to click the "run all" button, it jut did not work.
-I cannot click that text as a button no matter what.
-
-## Chrome
-
-I can sort of accept that all special keys not work in Chrome remote,
-but why that arrow keys are considered as special keys?
-That means no text editing is possible
-
-## Citrix Virtual Sinc Site
-
-Special keys except win button are all working.
-But all the punctuations are replaced by some "SMART" punctuations.
-However, this can be fixed in iPad input setting.
-So this seems to work well.
-
-## Citrix Virtual Sinc Site and Chrome Remote
-
-I even tried to use Chrome Remote inside the Sinc Site,
-No punctuations is working in Chrome Remote in Citrix.
-
-## Conclusion
-
-Finally I have to accept that I still cannot do any serious coding work on my iPad.
-It is a shame that the disability is due to the lack of apps.
- 
+## 结论
+于是，从此以后，我就再也没有不工作的理由了。🤦‍♂️。
