@@ -87,6 +87,16 @@ Jupyter就可以一直连着服务器。
 
 因为Safari是iPad上自己的软件，
 所以键盘和触摸都工作地十分流畅。
+比较难受的是iPad没有右键。
+Jupyter Lab的tab也不能拖拽，
+不过好在可以cmd+shift+D全页显示某个tab，
+也算是可以用。
+
+实在实在不行了的话，
+还可以用Cirtrix联Virtual Sinc Site，
+上面的SSH和port forwarding都是可以用的。
+Citrix的键盘支持也算是几家中比较好的。
+可惜我的X1当年觉得没用就出了。
 
 ## 结论
 于是，从此以后，我就再也没有不工作的理由了。🤦‍♂️。
