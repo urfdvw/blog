@@ -36,7 +36,7 @@ conda insatall jupyterlab
 ## 建立连接
 
 根据[这个](https://fizzylogic.nl/2017/11/06/edit-jupyter-notebooks-over-ssh/)博客，
-我发现最关键的就是SSH tunnel。
+我发现最关键的就是SSH Tunneling (Port Forwarding)。
 虽然和博客里面的场景不太一样，不过也是大同小异。
 
 首先打开windows 的 CMD。通过下面这些命令建立链接。
@@ -104,3 +104,15 @@ Jupyter Lab最推荐的使用方法，
 其实不是不行啦，
 vscode的notebook编辑器都可以看variable了。
 最终过然还是因为~~单纯的看不起~~notebook没那么通用吧。
+
+## 20/02/05 的评论
+
+刚刚用了一下vscode的Notebook编辑器。
+还是挺香的。
+其实也没有这么糟糕啦，
+Variable inspector也是支持的，
+只不过不能debug。
+如果需要Markdown多一些的话NB还是挺好用的，
+特别是要交报告的时候。
+只可惜Git不能track，
+不过Github可以预览结果倒是不错。

@@ -1,8 +1,8 @@
 # Ubuntu 在 Z170 Pro4 主板上的 Kworker BUG
 
 昨天挖坟挖出来一张PCIe的SSD大为惊喜，
-于是顺手就装在了实验室的机器上，然后装了Ubuntu。
-结果还是原来的问题，
+于是顺手就装在了实验室的机器上，然后又一次安装了Ubuntu。
+结果还是上次的问题，
 就是总有一个线程被一个叫`Kworker`的进程给占满了。
 当然很久以前就遇到过这个问题，
 当时看了[这个博客](https://stackoverflow.com/a/26172452/7037749)，
@@ -15,16 +15,17 @@ sudo echo disable > /sys/firmware/acpi/interrupts/gpe6F
 
 之后我又看到了[这个博客](https://askubuntu.com/a/421916),
 里面的什么traceback我试了，
-差点每把我系统窗给炸了。
+错误多到差点没把我terminal给炸了。
 目前除了知道用
 `sudo dmesg -c`删记录以外，
 还不知道怎么取消这个traceback。
 
 另外一个纳闷的事情是，
-不管是什么时候，装什么版本的Ubuntu，
-这个错误永远都是一样的。
+不管是哪次装，
+不管装什么版本的Ubuntu，
+这个错误的代码永远都是一样的。
 所以我猜是和硬件有关，
-最终我找到[这篇](http://jhshi.me/2015/11/14/acpi-error-method-parseexecution-failed-_gpe_l6f/index.html#.XjyNqGhKhyx)，
+最终我找到[这篇日志](http://jhshi.me/2015/11/14/acpi-error-method-parseexecution-failed-_gpe_l6f/index.html#.XjyNqGhKhyx)，
 这个人的错误代码也是一样，
 仔细看，我们的主板是一样的。
 这么看来，这个错误应该是主板上的。
@@ -43,12 +44,16 @@ sudo echo disable > /sys/firmware/acpi/interrupts/gpe6F
 于是查到[一篇文章](https://unix.stackexchange.com/questions/49626/purpose-and-typical-usage-of-etc-rc-local),
 里面说要有一个header和return 0。
 我照做了，得到这么一个文件
+
 ![](2020-02-06-17-12-01.png)
+
 可惜，还是木有任何效果。
 
 最后右键properities发现，
 有个属性叫做
+
 ![](2020-02-06-17-13-47.png)
+
 是空的，
 怪不得开机不运行，
 原来写完保存后只是一个纯文本。
