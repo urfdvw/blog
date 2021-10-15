@@ -5,3 +5,5 @@
 # [在iPad上使用Python](./200212remote_python/readme.md)
 # [ipad的鼠标](./200324ipad_cursor/readme.md)
 # [苹果鼠标的环形滚动 Circular scrolling for Apple Mouses ](./200330clickwheel_mouse/readme.md)
+# [摄像](./201212video/readme.md)
+# [台式电脑配件推荐，工作学习篇](./210531/readme.md)
