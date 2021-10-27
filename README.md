@@ -7,3 +7,4 @@
 # [苹果鼠标的环形滚动 Circular scrolling for Apple Mouses ](./200330clickwheel_mouse/readme.md)
 # [摄像](./201212video/readme.md)
 # [台式电脑配件推荐，工作学习篇](./210531/readme.md)
+# [CircuitPython：小白都能学会的单片机开发语言](./211006/readme.md)
