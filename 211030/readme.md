@@ -98,6 +98,8 @@ CMD 键的位置对应 Windows 的 Alt 键。
 这样一来，所有的 Ctrl 系快捷键就可以用 Mac 里 CMD 系快捷键同样的指法去按了，
 解放了左手的小拇指。
 
+![](2021-11-13-19-49-34.png)
+
 ## Alt-Tab
 
 这时你可能会发现，
@@ -122,6 +124,10 @@ Ctrl-Tab 本来是有用的，
 并不影响原先的 LCtrl-Tab。
 这样就可以在 Windows 里完美复现 Mac 上 CMD-Tab 和 Ctrl-Tab 的功能。
 
+```AHK
+RControl & Tab::AltTab
+```
+
 ## Alt-F4
 
 还有一个被干掉的重要快捷键是 Alt-F4。
@@ -133,6 +139,11 @@ Ctrl-Tab 本来是有用的，
 这个快捷键一般不会被 Windows 占用，
 所以就在 AHK 中将 RCtrl-Q 映射成 Alt-F4。
 这样退出程序的快捷键也和 Mac 统一了。
+
+```AHK
+RControl & Tab::AltTab
+^q::WinClose, A
+```
 
 # 键盘布局
 
@@ -190,6 +201,12 @@ Numpad 0 键可以用作 Ins。
 可以保证 Num Lock 始终是亮的。
 这样 Ins 的问题才算是彻底解决。
 
+```AHK
+RControl & Tab::AltTab
+^q::WinClose, A
+SetNumLockState, AlwaysOn
+```
+
 在这个问题上，
 Mac 其实早就有解决，
 在 Mac OS 下, num clear 这个按键的作用就是回到数字输入，
@@ -214,6 +231,8 @@ del 要么在独立的孤岛里，
 所以随便一放，
 正好可以留出位置，
 把 Home 和 end 放在相对合理的位置。
+
+![](2021-11-13-19-47-56.png)
 
 在 Mac 里 也可以用 Karabiner-Elements 将按键调整到同样的布局。
 
